@@ -63,10 +63,10 @@ class Products extends Component
         //     $this->product->save();
         // } else {
         Product::create([
-            'title' => $this->product['title'],
-            'name' => $this->product['name'],
-            'description' => $this->product['description'],
-            'amount' => $this->product['amount'],
+            'p_title' => $this->product['title'],
+            'p_name' => $this->product['name'],
+            'p_description' => $this->product['description'],
+            'p_amount' => $this->product['amount'],
         ]);
         // }
         $this->confirmProductAdd = false;
