@@ -10,9 +10,8 @@
 ## Getting Started 
 1) npm install 
 2) npm run dev
-3) composer update & install 
-4) composer require livewire/livewire
-5) php artisan vendor:publish --tag=jetstream-views
+3) composer require livewire/livewire
+4) php artisan vendor:publish --tag=jetstream-views
 
 ## About Laravel
 
