@@ -1,9 +1,9 @@
 <div class="p-6 sm:px-20 bg-white border-b border-gray-200">
     <div class="mt-8 text-2xl flex justify-between">
         <div>Currency</div>
-        <x-jet-button wire:click="confirmProductAdd" class="bg-blue-500 hover:bg-blue-700">
+        {{-- <x-jet-button wire:click="confirmProductAdd" class="bg-blue-500 hover:bg-blue-700">
             Add Currency
-        </x-jet-button>
+        </x-jet-button> --}}
     </div>
 </div>
 
@@ -24,9 +24,9 @@
                 <th class="px-4 py-2">
                     <div class="flex-items-center">exchange_rate</div>
                 </th>
-                <th class="px-4 py-2">
+                {{-- <th class="px-4 py-2">
                     Actions
-                </th>
+                </th> --}}
             </tr>
         </thead>
 
@@ -37,14 +37,14 @@
                     <td class="border px-4 py-2">{{ $currency->code }}</td>
                     <td class="border px-4 py-2">{{ $currency->symbol }}</td>
                     <td class="border px-4 py-2">{{ $currency->exchange_rate }}</td>
-                    <td class="border px-4 py-2">
+                    {{-- <td class="border px-4 py-2">
                         <x-jet-button wire:click="( {{ $currency->id }} )" class="bg-blue-500 hover:bg-blue-700">
                             Edit
                         </x-jet-button>
                         <x-jet-danger-button wire:click="( {{ $currency->id }} )" wire:loading.attr="disabled">
                             Delete
                         </x-jet-danger-button>
-                    </td>
+                    </td> --}}
                 </tr>
             @endforeach
         </body>

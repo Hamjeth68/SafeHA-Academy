@@ -11,22 +11,22 @@ use PDF;
 
 class Products extends Component
 {
-  
+
     public $pdf;
     public $product;
-    public $p_title;
-    public $p_name;
-    public $p_description;
-    public $p_amount;
+    // public $p_title;
+    // public $p_name;
+    // public $p_description;
+    // public $p_amount;
 
     public  $confirmProductDeletion = false;
     public  $confirmProductAdd = false;
 
     protected $rules = [
-        'product.title' => 'required|string',
-        'product.name' => 'required|string',
-        'product.description' => 'required|string',
-        'product.amount' =>  'required|numeric',
+        'product.title' => 'required|max:191|string',
+        'product.name' => 'required|max:191|string',
+        'product.description' => 'required|max:191|string',
+        'product.amount' =>  'numeric',
     ];
     public function render()
     {
